@@ -1,0 +1,732 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+@font-face{
+	font-family:song-name;
+	src:url(modelpic/fonts/song-name.ttf)format("truetype");
+}
+@font-face{
+font-family: singer-name;
+	src:url(modelpic/fonts/singer-name.ttf)format("truetype");
+}
+@font-face{
+font-family: song-tips;
+	src:url(modelpic/fonts/song-tips.ttf)format("truetype");
+}
+.container{
+	/*background: white;*/
+	/*background-image:url('modelpic/fresh1.jpg');
+	background-repeat:no-repeat;*/
+	width: 100%;
+	height: 2106px;
+
+}
+.header{
+	width: 100%;
+	height: 160px;
+	/*background-image:url('modelpic/fresh.jpg');
+	background-repeat:no-repeat;
+	background-position:0px 0px; */
+	/*background-image:url('modelpic/fresh.jpg'); 
+	background-repeat: no-repeat;
+	background-position:0px 0px;*/
+	position: relative;
+}
+.header ul li {
+ 	position: absolute;
+ 	left: 1200px;
+}
+.header ul li a{
+	color:#FFA07A;
+	font-weight: bold;
+	font-size: 20px;
+}
+.fresh1{
+
+}
+.header-bg{
+	width: 100%;
+	height: 140px;
+	/*background:white;*/
+	position: relative;
+	/*opacity: 0.5;*/
+	top: -140px;
+}
+/*.header-bg ul{
+	width: 100%;
+	height: 140px;
+	position: absolute;
+}*/
+.header-bg  li{
+	float: left;
+	margin: 0px 42px;
+	width: 140px;
+	height: 140px;
+
+}
+.header-bg .header-bg-first{
+	background-image: url('modelpic/smallfresh1.jpg');
+}
+.header-bg .header-bg-second{
+	background-image: url('modelpic/smallfresh2.jpg');
+}
+.header-bg .header-bg-third{
+	background-image: url('modelpic/smallfresh3.jpg');
+}
+.header-bg .header-bg-fourth{
+	background-image: url('modelpic/smallfresh4.jpg');
+}
+.header-bg .header-bg-fifth{
+	background-image: url('modelpic/smallfresh5.jpg');
+}
+.header-bg .header-bg-sixth{
+	background-image: url('modelpic/smallfresh6.jpg');
+}
+.header-bg-hr{
+	width: 80px;
+	height: 20px;
+	background:#1271f2;
+	position: absolute;
+	top: 140px;
+	left: 633px;
+	text-align: center;
+}
+.header-bg-hr:hover{
+	cursor: pointer;
+}
+
+
+/*.header a{
+	text-indent: -2em;
+}*/
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+/*#logo{
+	position: absolute;
+	width: 50px;
+	height:50px;
+	left: 740px;
+	top: 30px;
+	background:url(modelpic/icon/logo1.jpg) no-repeat ;
+}*/
+.header span{
+	font-size: 35px;
+	position: absolute;
+	top: 36px;
+	left: 755px;
+}
+.header_input{
+	width: 22%;
+	height: 26px;
+	top: 40px;
+	left:58%;
+	position: absolute;
+}
+
+.header_input:hover{
+	box-shadow: -2px -2px 10px #87CEFA;
+
+}
+.header_button{
+	font-size: 21px;
+	text-align: center;
+	top: 40px;
+	left:81%;
+	background-color: #3FFF02;
+	position: absolute;
+	cursor: pointer;
+}
+
+.wrapper{
+	width: 100%;
+	height: 1886px;
+	/*background-image:url('modelpic/fresh.jpg');
+	background-repeat:no-repeat;
+	background-position:0px -160px; */
+/*	background-image:url('modelpic/fresh.jpg'); 
+	background-repeat: no-repeat;
+	background-position: 0px 0px;*/
+}
+/*图片轮播*/
+
+.around{
+	width: 800px;
+	height: 400px;
+	/*background-color: white;*/
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	list-style-type:none; 
+}
+.around ul{
+	list-style-type:none; 
+	float:left;
+	position: absolute;
+}
+.around ul li{
+	float: left;
+}
+.around ol{
+	width: 130px;
+	height: 26px;
+	position: absolute;
+	background:rgba(195,193,193,0.5);
+	left: 590px;
+	top: 360px;
+	border-radius: 10px;
+}
+.around ol li{
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 3px;
+	border-radius: 10px;
+	background-color:rgba(245,243,243,0.8);
+	cursor: pointer;
+}
+.around ol li.current{
+	background-color: #FF780C;
+}
+.around-prev{
+	width: 64px;
+	height: 64px;
+	background-image: url('around/pic/cli.ico');
+	position: absolute;
+	top: 168px;
+	display: none;
+	cursor: pointer;
+	opacity: 0.7;
+	z-index: 2;
+
+}
+.around-after{
+	width: 64px;
+	height: 64px;
+	background-image: url('around/pic/cli.ico');
+	background-position: 64px 64px;
+	position: absolute;
+	top: 168px;
+	left: 736px;
+	display: none;
+	cursor: pointer;
+	opacity: 0.7;
+	z-index: 2;
+
+}
+.around-shadow-left{
+	width:80px;
+	height:232px;
+	position: absolute;
+	background-color: #CDC1C5;
+	opacity: 0.5;
+	z-index: 1;
+	display: none;
+}
+.around-shadow-right{
+	width: 80px;
+	height:232px;
+	position: absolute;
+	background-color: #CDC1C5;
+	opacity: 0.5;
+	left: 720px;
+	top: 168px;
+	z-index: 1;
+	display: none;
+}
+/*container-one-first*/
+/*新歌首发整体*/
+.container-one-first{
+	
+	width: 45%;
+	height: 300px;
+	/*background-color:white;*/
+	display: inline-block;
+	margin-left: 30px;
+	/*margin-top:-10px;*/
+	position: relative;
+
+}
+/*新歌首发标题*/
+.one-first-title h2{
+	position: absolute;
+	top: -30px;
+	left: -10px;
+
+	
+}
+/*.one-first-menu{
+
+	
+}*/
+/*.one-first-menu{
+	
+}
+*/
+
+.one-first-list{
+	position: absolute;
+}
+.one-first-list-first{
+	height: 42px;
+	line-height: 25px;
+}
+.one-first-list-second{
+	height: 42px;
+	line-height: 25px;
+}
+.one-first-list-third{
+	height: 42px;
+	line-height: 25px;
+}
+.one-first-list-fourth{
+	height: 42px;
+	line-height: 25px;
+}
+.one-first-list-fifth{
+	height: 42px;
+	line-height: 25px;
+}
+.one-first-list-sixth{
+	height: 44px;
+	line-height: 25px;
+}
+.one-first-list-seventh{
+	height: 25px;
+	line-height: 25px;
+}
+/*新歌首发的序号*/
+.num-1{
+	
+	float: left;
+	width: 25px;
+	height: 25px;
+	text-indent: -10000px;
+	background-image: url(modelpic/icon/num-1.ico);
+}
+.num-2{
+	
+	float: left;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	text-indent: -10000px;
+	background-image: url(modelpic/icon/num-2.ico);
+}
+.num-3{
+	float: left;
+	width: 25px;
+	height: 25px;
+	text-indent: -10000px;
+	background-image: url(modelpic/icon/num-3.ico);
+}
+.num-4{
+	float: left;
+	width: 25px;
+	height: 25px;
+	text-indent: -10000px;
+	background-image: url(modelpic/icon/num-4.ico);
+}
+.num-5{
+
+	float: left;
+	width: 25px;
+	height: 25px;
+	text-indent: -10000px;
+	background-image: url(modelpic/icon/num-5.ico);
+}
+.num-6{
+	float: left;
+	width: 25px;
+	height: 25px;
+	text-indent: -10000px;
+	background-image: url(modelpic/icon/num-6.ico);
+}
+.num-7{
+	float: left;
+	width: 25px;
+	height: 25px;
+	text-indent: -10000px;
+	background-image: url(modelpic/icon/num-7.ico);
+}
+/*新歌首发的歌手名字*/
+.song-name{
+	float: left;
+	width: 300px;
+	margin-left: 20px;
+}
+.song-name a{
+	font-size: 18px;
+	color:#778899;
+	font-weight: bold;
+	font-family:song-name;
+}
+.song-name a:hover{
+	text-decoration: underline;
+}
+.singer-name a{
+	color:#4564E0;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: singer-name;
+}
+.singer-name a:hover{
+	text-decoration: underline;
+}
+.one-first-menu li{
+	line-height: 20px;
+	margin: 0px 30px;
+	position: absolute;
+}
+.one-first-menu-first{
+	top: -25px;
+	left: 120px;
+}
+.one-first-menu-second{
+	top: -25px;
+	left: 180px;
+}
+.one-first-menu-third{
+	top: -25px;
+	left: 240px;
+}
+.one-first-menu-fourth{
+	top: -25px;
+	left: 300px;
+}
+.one-first-menu li a{
+	color:green;
+	font-weight: bold;
+	font-size: 20px;
+}
+/*container-one-second*/
+
+.container-one-second{
+	width: 45%;
+	height: 300px;
+	/*background-color:white;*/
+	display: inline-block;
+	margin-left: 50px;
+	margin-top: 35px;
+	position: relative;
+
+}
+.one-second-title{
+	position: absolute;
+	top: -30px;
+}
+.container-one-second-menu ul li{
+	display:inline-block;
+	width:160px;
+	margin:8px 10px 0px 25px;
+}
+/*figure.container-one-second-menu-img{
+		background: #FAE8E8;
+
+}*/
+.container-one-second-menu-img img{
+
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
+	-webkit-backface-visibility:visible;
+	backface-visibility: visible;
+}
+figure.container-one-second-menu-img:hover img{
+	opacity: 0.8;
+	transform:scale3d(1.2,1.2,1); 
+	-webkit-transform:scale3d(1.2,1.2,1); 
+}
+.album-name{
+	width:100%;
+	text-align:center;
+}
+.album-name a{
+	color:#dc9423;
+	font-weight:bold;
+}
+.album-name a:hover{
+	text-decoration: underline;
+}
+/*container-two-first*/
+.container-two-first{
+	width: 50%;
+	height: 430px;
+	display: inline-block;
+	margin:40px 0px 15px 30px;
+	/*background-color:white;*/
+	position: relative;
+}
+.two-first-title{
+	position: absolute;
+	top: -35px;
+	left: -15px;
+	font-size: 20px;
+}
+.two-first-view{
+	position: absolute;
+}
+.two-first-view li{
+	float: left;
+	margin: 0px 20px 5px 0px;
+
+}
+.two-first-view-third img{
+	margin-top: 12px;
+}
+.two-first-view-fourth img{
+	margin-top: 12px;
+}
+
+.two-first-view li a.play{
+	background: url(modelpic/icon/play.ico) no-repeat;
+	width: 32px;
+	height:32px;
+	position: absolute;
+}
+.two-first-view-first,.two-first-view-second,.two-first-view-third,.two-first-view-fourth:hover{
+
+}
+.two-first-view-first a.play{
+	left: 190px;
+	top: 90px;
+	display: none;
+}
+.two-first-view-second  a.play{
+	left: 510px;
+	top: 90px;
+	display: none;
+}
+.two-first-view-third  a.play{
+	left: 110px;
+	top: 300px;
+	display: none;
+}
+.two-first-view-fourth a.play{
+	left: 440px;
+	top: 300px;
+	display: none;
+}
+/*container-two-second*/
+.container-two-second{
+	width: 35%;
+	height: 330px;
+	/*background-color: purple;*/
+	display: inline-block;
+	position: relative;
+	top: -50px;
+	margin-left: 50px;
+}
+.two-second-title{
+	position: absolute;
+	top: -30px;
+}
+.two-second-view{
+	width: 470px;
+	height: 340px;
+	position: absolute;
+	overflow: hidden;
+	background: #EAE899;
+}
+.two-second-view a{
+	
+	position: absolute;
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
+	-webkit-backface-visibility:visible;
+	backface-visibility: visible;
+}
+.two-second-view:hover a{
+	opacity: 0.7;
+	transform: scale3d(1.1,1.1,1);
+	-webkit-transform: scale3d(1.1,1.1,1);
+}
+/*.two-second-view li a span{
+	position: absolute;
+	text-align: center;
+	left: 180px;
+	top: 340px;
+	color: green;
+}*/
+
+.click-prev{
+	left: 0px;
+	top: 148px;
+	width: 64px;
+	height: 64px;
+	background-image: url('around/pic/cli.ico');
+	position:absolute;
+	display: none;
+}
+.click-next{
+	background-image: url('around/pic/cli.ico');
+	background-position: 64px 64px;
+	width: 64px;
+	height: 64px;
+	position:absolute;
+	left: 406px;
+	top: 148px;
+	display: none;
+}
+
+/*container-third*/
+.container-third{
+	width: 95%;
+	height:366px;
+/*	background-color: white;*/
+	margin:30px auto 0px ;
+	position: relative;
+}
+.third-title{
+	position: absolute;
+	top: -40px;
+	left: -10px;
+	font-size: 22px;
+}
+.third-menu{
+	position: relative;
+}
+.third-menu li{
+	position: absolute;
+	margin:0px 30px;
+}
+.third-menu li a{
+	text-decoration: none;
+	/*color: #EE7942;*/
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+}
+.third-menu-first{
+	top: -25px;
+	left: 100px;
+}
+.third-menu-first-a{
+	color: green;
+}
+.third-menu-second{
+	top: -25px;
+	left: 160px;
+}
+.third-menu-third{
+	top: -25px;
+	left: 220px;
+}
+.third-menu-fourth{
+	top: -25px;
+	left: 280px;
+}
+.third-view{
+	position: absolute;
+}
+#thirdview ul li a img{
+	opacity: 0.7;
+}
+
+.third-view li{
+
+	float: left;
+}
+
+.third-view-one {
+	margin-right: 20px;
+
+	
+}
+.third-view-two {
+	margin-right: 10px;
+}
+
+.third-view-three{
+	margin-right: 10px;
+	margin-top: 5px;
+}
+.third-view-name-one{
+	width: 360px;
+	height:34px; 
+	position: absolute;
+	top: 330px;
+	background:black;
+	opacity: 0.5;
+	color: white;
+	font-size: 20px;
+}
+.third-view-name-two{
+	position: absolute;
+	top: 155px;
+	background:black;
+	opacity: 0.5;
+	width:210px;
+	height: 30px;
+	color: white;
+	font-size: 20px;
+}
+.third-view-name-three{
+	position: absolute;
+	top: 330px;
+	background:black;
+	opacity: 0.5;
+	width: 210px;
+	height: 33px;
+	color: white;
+	font-size: 20px;
+}
+.third-view-name-one:hover,.third-view-name-two:hover, .third-view-name-three:hover{
+	text-decoration: underline;
+}
+/*container-fourth*/
+.container-fourth{
+	width: 100%;
+	height: 230px;
+/*	background-color:white;*/
+	margin-top: 30px;
+
+	position: relative;
+}
+.fourth-title{
+	position: absolute;
+/*	top: px;*/
+	left: 20px;
+	font-size: 22px;
+}
+.fourth-list{
+	position:relative;
+}
+.fourth-list li{
+	float: left;
+	margin-top: 20px;
+	position: relative;
+}
+.fourth-list li a:hover{
+	text-decoration:underline; 
+}
+.fourth-list-first{
+	margin-left: 100px;
+	
+}
+.fourth-list div{
+	width:50%;
+}	
+.fourth-list div a{
+	color: #FFC125;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 0px auto;
+	line-height: 35px;
+}
+
+.footer{
+	position:absolute;
+	width: 100%;
+	height: 60px;
+	/*margin-top: 50px;*/
+	/*background-image:url('modelpic/fresh.jpg');
+	background-repeat: no-repeat;
+	background-position: 0px 2001px;*/
+}
+
